@@ -1,0 +1,29 @@
+@use '../components/header';
+@use 'variables' as var;
+@use '../components/shortcodes/new-restaurant-form';
+@use '../components/shortcodes/user-reservation-list';
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+html::before {
+    content: "";
+
+    position: fixed;
+    top:    0;
+    bottom: 0;
+    left:   0;
+    right:  0;
+
+    background-color: var.$color-primary-light;
+    z-index: -2;
+}
+
+html {
+    position: relative;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+}
